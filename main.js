@@ -20,3 +20,32 @@ function closeMenu() {
 navLinks.forEach((link) => {
     link.addEventListener('click', closeMenu)
 })
+
+function handleScroll() {
+    if (window.scrollY > 150) {
+        nav.classList.add('sticky-nav')
+    } else {
+        nav.classList.remove('sticky-nav')
+    }
+}
+window.addEventListener('scroll', handleScroll)
+
+
+//TYPING DELETING TEXT
+function initTypedText() {
+    const options = {
+        strings: [
+            "Hello, I'm Kanwar Dhillon",
+            "A Software Engineer",
+            "From Sydney",
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 1000,
+        startDelay: 500,
+        loop: true,
+    }
+    const typed = new Typed("#typed-text", options)
+}
+
+initTypedText()
