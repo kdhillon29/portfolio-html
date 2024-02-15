@@ -4,6 +4,7 @@
   background: url(/assets/hero.jpg);
   background-size: cover;
   z-index: 1;
+  background-position: center;
   background-attachment: fixed;
 }
 
@@ -56,6 +57,10 @@
 }
 
 @media only screen and (max-width: 650px) {
+  .hero {
+    height: 50vh;
+    background-position: center;
+  }
   .hero-content h2 {
     font-size: 30px;
   }

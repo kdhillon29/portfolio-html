@@ -19,8 +19,9 @@
   font-size: 18px;
   color: rgb(97, 95, 95);
   line-height: 2;
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
+  text-align: justify;
 }
 
 .about-button {
